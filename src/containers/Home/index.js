@@ -20,6 +20,7 @@ import {
 
 
 function App() {
+  
 
   const [costumes, setCostumer] = useState([])
   const inputCostumer = useRef()
@@ -33,7 +34,7 @@ function App() {
     return toast.error('Preencha os campos abaixo')
   }else{toast.success('ok')}
   
-     const {data: newCostumer} = await axios.post("http://localhost:3001/users",{
+     const {data: newCostumer} = await axios.post("https://hamburgueria-api.vercel.app/",{
    order: inputCostumer.current.value,
    clientName: inputName.current.value
   })

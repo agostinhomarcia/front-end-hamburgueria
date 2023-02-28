@@ -52,6 +52,7 @@ export const Costumes = styled.li`
     padding-right: 66px;
     padding-bottom: 35px;
     color: #ffffff;
+    
   }
   h1 {
     font-style: normal;
@@ -73,6 +74,9 @@ export const Costumes = styled.li`
 
 export const DivUser = styled.div`
   display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 10px;
 `;
 
 export const Button = styled.button`
