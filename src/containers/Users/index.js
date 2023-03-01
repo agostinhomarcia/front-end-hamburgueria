@@ -26,7 +26,7 @@ useEffect(()=>{
 
   async function deleteUserId(userId){
 
-    await axios.delete(`https://hamburgueria-api.vercel.app//users/${userId}`)
+    await axios.delete(`https://hamburgueria-api.vercel.app/users/${userId}`)
 
     const newUsers = costumers.filter((user) => user.id !== userId)
     
