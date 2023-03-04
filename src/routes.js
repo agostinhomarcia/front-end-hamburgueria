@@ -1,17 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./containers/Home";
-import Users from "./containers/Users";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-function routerDom() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/usuarios" element={<Users/>}/>
-      </Routes>
-    </Router>
-  );
+import Home from './containers/Home';
+import Orders from "./containers/Orders";
+
+function Routes() {
+
+    return (
+        <Router>
+            
+                <Route exact path="/" component={Home} />
+                <Route exact path="/orders" component={Orders} />
+           
+        </Router>
+    )
 }
 
-export default routerDom;
+export default Routes
